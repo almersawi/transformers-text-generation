@@ -11,7 +11,7 @@ logging_config:
 
 applications:
   - name: model
-    import_path: app.app:app
+    import_path: app:app
     runtime_env: {}
     deployments:
       - name: App
