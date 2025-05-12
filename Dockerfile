@@ -9,9 +9,6 @@ EXPOSE 8080-9000
 COPY requirements.txt /app/requirements.txt
 RUN pip install -r /app/requirements.txt
 
-# Security: add user runner
-RUN useradd --uid 10000 runner
-
 RUN mkdir /home/runner && chown runner /home/runner
 
 # Create app folder
