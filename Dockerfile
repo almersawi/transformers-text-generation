@@ -21,7 +21,7 @@ COPY app/app.py /app/app.py
 COPY app/model.py /app/model.py
 COPY deployment-config.yaml /app/deployment-config.yaml
 
-COPY tartup.sh /app/startup.sh
+COPY startup.sh /app/startup.sh
 RUN chmod +x /app/startup.sh
 
 ENTRYPOINT ["/app/startup.sh"]
