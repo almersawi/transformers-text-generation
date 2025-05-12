@@ -1,4 +1,4 @@
-from .model import App
+from model import App
 
 
 def init_app() -> App:
