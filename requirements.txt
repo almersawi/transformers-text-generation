@@ -1,0 +1,4 @@
+ray[serve]==2.31.0
+accelerate
+transformers
+torch

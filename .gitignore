@@ -1,0 +1,9 @@
+.mypy_cache
+.pycache
+__pycache__
+*.pyc
+*.pyo
+*.pyd
+*.pyw
+*.pyz
+*.pywz
