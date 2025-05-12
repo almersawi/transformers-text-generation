@@ -19,9 +19,9 @@ RUN mkdir -p /app && chown runner /app
 
 COPY app/app.py /app/app.py
 COPY app/model.py /app/model.py
-COPY app/deployment-config.yaml /app/deployment-config.yaml
+COPY deployment-config.yaml /app/deployment-config.yaml
 
-COPY app/startup.sh /app/startup.sh
+COPY tartup.sh /app/startup.sh
 RUN chmod +x /app/startup.sh
 
 ENTRYPOINT ["/app/startup.sh"]
