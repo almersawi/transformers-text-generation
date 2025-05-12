@@ -63,11 +63,11 @@ class Model:
         self.__model_path = model_path
         self.__loop = asyncio.get_running_loop()
         self.__device = (
-            "cuda"
+            "auto"
             if torch.cuda.is_available()
             else DEFAULT_DEVICE_FALLBACK
         )
-        self.__dtype = torch.bfloat16 if self.__device == "cuda" else torch.float16
+        self.__dtype = torch.bfloat16 if self.__device == "auto" else torch.float16
         self.__max_model_length = max_model_length
 
     def load_model(self) -> None:
